@@ -1,0 +1,20 @@
+$TTL 3D
+@           IN    SOA    ns.freestatemakers.org. root.freestatemakers.org. (
+                         2014102701   ; Serial
+                         28800        ; Refresh, seconds
+                         7200         ; Retry, seconds
+                         604800       ; Expire, seconds
+                         86400)       ; Minimum TTL
+;
+                  NS     directory
+                  MX     10 mail    ; Primary Mail Xchanger
+
+
+freestatemakers.org.   A     208.75.97.209
+
+directory         A      208.75.97.209
+ns                CNAME  directory
+
+www               CNAME  freestatemakers.org.
+
+mail              A      208.75.97.209
