@@ -9,4 +9,4 @@ ADD conf /var/named
 
 EXPOSE 1053
 
-CMD ["/usr/sbin/named", "-g"]
+CMD ["/usr/sbin/named", "-f"]
