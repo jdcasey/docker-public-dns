@@ -1,6 +1,6 @@
 $TTL 3D
 @           IN    SOA    ns1.manage-my.info. root.manage-my.info. (
-                         2014111101   ; Serial
+                         2016031601   ; Serial
                          28800        ; Refresh, seconds
                          7200         ; Retry, seconds
                          604800       ; Expire, seconds
@@ -11,15 +11,13 @@ $TTL 3D
 
 
 manage-my.info.   A     208.75.97.209
-manage-my.info    MX 10 mx1.mailhop.org.
-manage-my.info    MX 20 mx2.mailhop.org.
+manage-my.info    MX 10 mail.manage-my.info.
 
 ns1               A      208.75.97.209
 ns2               A      67.52.224.62
 
 mail.manage-my.info A    208.75.97.209
-mail.manage-my.info MX 10 mx1.mailhop.org.
-mail.manage-my.info MX 20 mx2.mailhop.org.
+mail.manage-my.info MX 10 208.75.97.209.
 
 www               CNAME  manage-my.info.
 puppet            CNAME  manage-my.info.
